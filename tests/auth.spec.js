@@ -20,14 +20,14 @@ describe('Auth', function () {
 
     describe('Log in with wrong credentials should return error', function () {
         before(async function () {
-            await authHelper.get( 'invalid', 'invalid');
+            await authHelper.get('invalid', 'invalid');
         });
 
         it('Response status code is 404', function () {
-            expect(authHelper.response.statusCode).to.eq(404    );
+            expect(authHelper.response.statusCode).to.eq(404);
         });
 
-        it('Response status code is 404', function () {
+        it('Response body contains error message', function () {
             expect(authHelper.response.body.message).to.eq('Wrong login or password.');
         });
     });
