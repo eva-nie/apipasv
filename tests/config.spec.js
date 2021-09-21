@@ -10,7 +10,7 @@ let amountUpdate = 600;
 //     "initial_amount": 1000
 // }
 
-describe('Config', function () {
+describe.skip('Config', function () {
     const configHelper = new ConfigHelper();
     const usersHelper = new UsersHelper();
 

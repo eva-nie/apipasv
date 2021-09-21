@@ -2,7 +2,7 @@ import TransactionsHelper from '../helpers/transactions.helper';
 import UsersHelper from '../helpers/users.helper';
 import {expect} from 'chai';
 
-describe('Transactions', function (){
+describe.skip('Transactions', function (){
     let transactionsHelper = new TransactionsHelper();
     let usersHelper = new UsersHelper();
     let userId1;
